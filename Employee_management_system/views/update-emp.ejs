@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Edit Details</title>
+  </head>
+  <body>
+    <form action="/updateEmployee" method="POST">
+      Empoyee Id :
+      <input
+        type="text"
+        name="empid"
+        id="empid"
+        value="<%=emp.empid%>"
+        readonly
+      />
+      <br />
+      <br />
+      Employee Name :
+      <input type="text" name="ename" id="ename" value="<%=emp.ename%>" />
+      <br />
+      <br />
+      Salary : <input type="text" name="sal" id="sal" value="<%=emp.sal%>" />
+      <br />
+      <br />
+      <button type="submit" name="btn" id="btn" value="btn">
+        Update Employee
+      </button>
+    </form>
+  </body>
+</html>
